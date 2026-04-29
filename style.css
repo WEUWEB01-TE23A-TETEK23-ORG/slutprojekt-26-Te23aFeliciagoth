@@ -26,29 +26,52 @@ img {
     width: 100%;
 }
 body {
-
+background-image: url(./bilder/image\ copy\ 2.png);
+background-size: cover;
+background-attachment: fixed;
 }
 
 .kontainer {
+    width: 1000px;
+    margin: auto;
+    padding: 30px;
   display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
         "sidhuvud sidhuvud"
         "innehåll sidbar"
         "sidfot sidfot";
+        gap: 20px;
+        
 }
 
 header {
 grid-area: sidhuvud;
+color: ;
+background-color: #16324fa8;
 }
 header h1 {
-
+text-align: center;
+font-size: 40px;
 }
 header nav {
 
+padding: 10px;
+border-radius: 3px;
+gap: 10px;
+display: flex;
+justify-content: center ;
+
+
 }
 header nav a {
-
+text-decoration: none;
+padding: 10px;
+background-color: rgba(42, 98, 143, 0.86);
+border-radius: 4px;
+width: 200px;
+text-align: center;
+color: #b6daf5;
 }
 
 header nav a:hover {
@@ -61,11 +84,21 @@ header nav a.aktiv {
 
 main {
 grid-area: innehåll;
-}
-main h2 {
+background-color: #16324f;
+text-align: center;
 
 }
+main h2 {
+font-size: 35px;
+}
+main .innehall {
+   display: grid;
+grid-template-columns: 1fr 1fr; 
+ gap: px;
+}
 main img {
+padding: ;
+margin-left: 10px;
 
 }
 main p {
@@ -73,6 +106,7 @@ main p {
 }
 aside {
 grid-area: sidbar;
+background-color: #16324f;
 }
 aside h3 {
 
@@ -83,6 +117,7 @@ aside p {
 
 footer {
 grid-area: sidfot;
+background-color: #16324f;
 }
 footer a {
 
