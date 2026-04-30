@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Zen+Dots&display=swap');
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -32,7 +34,7 @@ background-attachment: fixed;
 }
 
 .kontainer {
-    width: 1000px;
+    width: 1100px;
     margin: auto;
     padding: 30px;
   display: grid;
@@ -49,10 +51,13 @@ header {
 grid-area: sidhuvud;
 color: ;
 background-color: #16324fa8;
+color: #e8d7f1;
 }
 header h1 {
 text-align: center;
 font-size: 40px;
+margin-top: 10px;
+  font-family: "Zen Dots", sans-serif;
 }
 header nav {
 
@@ -61,7 +66,9 @@ border-radius: 3px;
 gap: 10px;
 display: flex;
 justify-content: center ;
-
+  font-family: "Turret Road", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
 }
 header nav a {
@@ -72,56 +79,84 @@ border-radius: 4px;
 width: 200px;
 text-align: center;
 color: #b6daf5;
+font-size: 20px;
 }
 
 header nav a:hover {
-
+background-color: #e8d7f1;
+color: #18435a;
 }
 
 header nav a.aktiv {
-
+background-color: #e8d7f1;
+color: #18435a;
 }
 
 main {
 grid-area: innehåll;
 background-color: #16324f;
 text-align: center;
+color: #e8d7f1;
+
 
 }
 main h2 {
 font-size: 35px;
+  font-family: "Zen Dots", sans-serif;
+
 }
 main .innehall {
    display: grid;
 grid-template-columns: 1fr 1fr; 
- gap: px;
+ gap:20px;
+ 
 }
 main img {
-padding: ;
-margin-left: 10px;
+padding: 20px;
+height: 250px;
+border: 1px solid #e8d7f1;
 
 }
 main p {
-
+font-size: 20px;
+margin: 10px;
+   font-family: "Turret Road", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 aside {
 grid-area: sidbar;
 background-color: #16324f;
+color: #e8d7f1;
+  font-family: "Zen Dots", sans-serif;
 }
 aside h3 {
-
+font-size: 30px;
+margin: 10px;
 }
 aside p {
-
+font-size: 17px;
+margin: 10px;
 }
 
 footer {
 grid-area: sidfot;
 background-color: #16324f;
-}
-footer a {
+color: #e8d7f1;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 
 }
+footer a {
+text-decoration: none;
+color: #3e92cc;
+}
 footer p {
+margin-top: 20px ;
+margin-bottom: 20px;
+margin-left: 10px;
+font-size: 20px;
 
 }
