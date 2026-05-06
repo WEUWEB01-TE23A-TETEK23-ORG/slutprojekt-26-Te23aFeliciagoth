@@ -2,13 +2,13 @@
 
 /* Enkel CSS-reset */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body,
@@ -20,143 +20,200 @@ h5,
 h6,
 p,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
+
 body {
-background-image: url(./bilder/image\ copy\ 2.png);
-background-size: cover;
-background-attachment: fixed;
+  background-image: url(./bilder/image\ copy\ 2.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .kontainer {
-    width: 1100px;
-    margin: auto;
-    padding: 30px;
+  width: 1100px;
+  margin: auto;
+  padding: 30px;
   display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-        "sidhuvud sidhuvud"
-        "innehåll sidbar"
-        "sidfot sidfot";
-        gap: 20px;
-        
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "sidhuvud"
+    "innehåll"
+    "sidbar"
+    "sidfot";
+  gap: 20px;
+
 }
+
+/* Head */
 
 header {
-grid-area: sidhuvud;
-color: ;
-background-color: #16324fa8;
-color: #e8d7f1;
+  grid-area: sidhuvud;
+ 
+  background-color: #16324fa8;
+  color: #e8d7f1;
 }
+
 header h1 {
-text-align: center;
-font-size: 40px;
-margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
   font-family: "Zen Dots", sans-serif;
 }
+
 header nav {
 
-padding: 10px;
-border-radius: 3px;
-gap: 10px;
-display: flex;
-justify-content: center ;
+  padding: 10px;
+  border-radius: 3px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
   font-family: "Turret Road", sans-serif;
   font-weight: 400;
   font-style: normal;
 
 }
+
 header nav a {
-text-decoration: none;
-padding: 10px;
-background-color: rgba(42, 98, 143, 0.86);
-border-radius: 4px;
-width: 200px;
-text-align: center;
-color: #b6daf5;
-font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgba(42, 98, 143, 0.86);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  color: #b6daf5;
+  font-size: 20px;
 }
 
 header nav a:hover {
-background-color: #e8d7f1;
-color: #18435a;
+  background-color: #e8d7f1;
+  color: #18435a;
 }
 
 header nav a.aktiv {
-background-color: #e8d7f1;
-color: #18435a;
+  background-color: #e8d7f1;
+  color: #18435a;
 }
+/* main */
 
 main {
-grid-area: innehåll;
-background-color: #16324f;
-text-align: center;
-color: #e8d7f1;
+  grid-area: innehåll;
+  background-color: #16324f;
+  text-align: center;
+  color: #e8d7f1;
 
 
 }
+
 main h2 {
-font-size: 35px;
+  font-size: 35px;
   font-family: "Zen Dots", sans-serif;
 
 }
-main .innehall {
-   display: grid;
-grid-template-columns: 1fr 1fr; 
- gap:20px;
- 
+main h3 {
+    font-family: "Zen Dots", sans-serif;
+    margin-top: 20px;
 }
-main img {
-padding: 20px;
-height: 250px;
-border: 1px solid #e8d7f1;
+
+main .innehall {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 
 }
+
+
+main .innehall img {
+  padding: 20px;
+  height: 250px;
+  border: 1px solid #e8d7f1;
+
+}
+
 main p {
-font-size: 20px;
-margin: 10px;
-   font-family: "Turret Road", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  font-family: "Turret Road", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+/* aside */
 aside {
-grid-area: sidbar;
-background-color: #16324f;
-color: #e8d7f1;
+  grid-area: sidbar;
+  background-color: #16324f;
+  color: #e8d7f1;
   font-family: "Zen Dots", sans-serif;
 }
+
 aside h3 {
-font-size: 30px;
-margin: 10px;
-}
-aside p {
-font-size: 17px;
-margin: 10px;
+  font-size: 30px;
+  margin: 10px;
 }
 
+aside p {
+  font-size: 17px;
+  margin: 10px;
+}
+/* footer */
+
 footer {
-grid-area: sidfot;
-background-color: #16324f;
-color: #e8d7f1;
+  grid-area: sidfot;
+  background-color: #16324f;
+  color: #e8d7f1;
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
 
 
 }
-footer a {
-text-decoration: none;
-color: #3e92cc;
-}
-footer p {
-margin-top: 20px ;
-margin-bottom: 20px;
-margin-left: 10px;
-font-size: 20px;
 
+footer a {
+  text-decoration: none;
+  color: #3e92cc;
+}
+
+footer p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+
+}
+
+
+
+
+/* Om skärmen är mindre än 1200px? */
+@media (max-width: 1100px) { 
+.kontainer {
+    width: 100%;
+}
+}
+
+/* Om skärmen är mindre än 768px (ipad) */
+@media (max-width: 768px) {
+    .kontainer {
+      
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "sidhuvud"
+        "innehåll"
+        "sidbar"
+        "sidfot";
+    }
+}
+
+/* Om mindre än 576px */
+@media (max-width: 320px) { 
+    header h1 {font-size: 3em;
+    text-align: center;}
+    header nav a {
+        display: block;
+        margin-bottom: 5px;
+        width: 100%;
+    }
 }
