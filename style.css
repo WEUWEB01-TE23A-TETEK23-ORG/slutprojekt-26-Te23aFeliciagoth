@@ -41,10 +41,9 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
-    "sidhuvud"
-    "innehåll"
-    "sidbar"
-    "sidfot";
+    "sidhuvud sidhuvud"
+    "innehåll sidbar"
+    "sidfot sidfot";
   gap: 20px;
 
 }
@@ -184,6 +183,26 @@ footer p {
 
 }
 
+main .video {
+  display: none;
+}
+
+main .knapp button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+    font-family: "Zen Dots", sans-serif;
+    color:#e8d7f1 ;
+    background-color: #1d214a;
+}
+
+main .mertext {
+  display: none;
+}
 
 
 
