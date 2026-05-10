@@ -250,7 +250,7 @@ main .bilder {
 
   header nav a {
     display: block;
-    margin-bottom: .3125em;
+    margin-bottom: 0.3125em;
     width: 100%;
   }
 }
