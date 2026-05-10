@@ -35,16 +35,16 @@ body {
 }
 
 .kontainer {
-  width: 1100px;
+  width: 68.75em;
   margin: auto;
-  padding: 30px;
+  padding: 1.875em;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
     "sidhuvud sidhuvud"
     "innehåll sidbar"
     "sidfot sidfot";
-  gap: 20px;
+  gap: 1.25em;
 
 }
 
@@ -52,23 +52,23 @@ body {
 
 header {
   grid-area: sidhuvud;
- 
+
   background-color: #16324fa8;
   color: #e8d7f1;
 }
 
 header h1 {
   text-align: center;
-  font-size: 40px;
-  margin-top: 10px;
+  font-size: 2.5em;
+  margin-top: 0.625em;
   font-family: "Zen Dots", sans-serif;
 }
 
 header nav {
 
-  padding: 10px;
-  border-radius: 3px;
-  gap: 10px;
+  padding: 0.625em;
+  border-radius: 0.1875em;
+  gap: 0.625em;
   display: flex;
   justify-content: center;
   font-family: "Turret Road", sans-serif;
@@ -79,13 +79,13 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625em;
   background-color: rgba(42, 98, 143, 0.86);
-  border-radius: 4px;
-  width: 200px;
+  border-radius: 0.25em;
+  width: 12.5em;
   text-align: center;
   color: #b6daf5;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 header nav a:hover {
@@ -97,6 +97,7 @@ header nav a.aktiv {
   background-color: #e8d7f1;
   color: #18435a;
 }
+
 /* main */
 
 main {
@@ -109,37 +110,39 @@ main {
 }
 
 main h2 {
-  font-size: 35px;
+  font-size: 2.1875em;
   font-family: "Zen Dots", sans-serif;
 
 }
+
 main h3 {
-    font-family: "Zen Dots", sans-serif;
-    margin-top: 20px;
+  font-family: "Zen Dots", sans-serif;
+  margin-top: 1.25em;
 }
 
 main .innehall {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 1.25em;
 
 }
 
 
 main .innehall img {
-  padding: 20px;
-  height: 250px;
-  border: 1px solid #e8d7f1;
+  padding: 1.25em;
+  height: 15.625em;
+  border: 0.0625em solid #e8d7f1;
 
 }
 
 main p {
-  font-size: 20px;
-  margin: 10px;
+  font-size: 1.25em;
+  margin: 0.625em;
   font-family: "Turret Road", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 /* aside */
 aside {
   grid-area: sidbar;
@@ -149,14 +152,15 @@ aside {
 }
 
 aside h3 {
-  font-size: 30px;
-  margin: 10px;
+  font-size: 1.875em;
+  margin: 0.625em;
 }
 
 aside p {
-  font-size: 17px;
-  margin: 10px;
+  font-size: 1.0625em;
+  margin: 0.625em;
 }
+
 /* footer */
 
 footer {
@@ -176,10 +180,10 @@ footer a {
 }
 
 footer p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  font-size: 20px;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  margin-left: 0.625em;
+  font-size: 1.25em;
 
 }
 
@@ -188,51 +192,65 @@ main .video {
 }
 
 main .knapp button {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 20px;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-bottom: 0.625em;
+  padding-top: 0.625em;
+  font-size: 1.25em;
   margin-bottom: 5vh;
   margin-top: 5vh;
-    font-family: "Zen Dots", sans-serif;
-    color:#e8d7f1 ;
-    background-color: #1d214a;
+  font-family: "Zen Dots", sans-serif;
+  color: #e8d7f1;
+  background-color: #1d214a;
+}
+
+main .knapp button:hover {
+  background-color: #e8d7f1;
+  color: #1d214a;
 }
 
 main .mertext {
   display: none;
 }
 
+main .bilder {
+  display: none;
 
 
-/* Om skärmen är mindre än 1200px? */
-@media (max-width: 1100px) { 
-.kontainer {
+}
+
+
+
+/* Om skärmen är mindre än 68.75em? */
+@media (max-width: 68.75em) {
+  .kontainer {
     width: 100%;
-}
-}
-
-/* Om skärmen är mindre än 768px (ipad) */
-@media (max-width: 768px) {
-    .kontainer {
-      
-        grid-template-columns: auto;
-        grid-template-areas: 
-        "sidhuvud"
-        "innehåll"
-        "sidbar"
-        "sidfot";
-    }
+  }
 }
 
-/* Om mindre än 576px */
-@media (max-width: 320px) { 
-    header h1 {font-size: 3em;
-    text-align: center;}
-    header nav a {
-        display: block;
-        margin-bottom: 5px;
-        width: 100%;
-    }
+/* Om skärmen är mindre än 48em (ipad) */
+@media (max-width: 48em) {
+  .kontainer {
+
+    grid-template-columns: auto;
+    grid-template-areas:
+      "sidhuvud"
+      "innehåll"
+      "sidbar"
+      "sidfot";
+  }
+}
+
+/* Mobil om skärmen är mindre än 36em */
+@media (max-width: 36em) {
+  header h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  header nav a {
+    display: block;
+    margin-bottom: .3125em;
+    width: 100%;
+  }
 }
